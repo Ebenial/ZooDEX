@@ -44,7 +44,7 @@ public class HomeActivity extends AppCompatActivity {
 
         //Action du bouton options, qui donne accès aux paramètres de l'application
         options.setOnClickListener(v -> {
-            //setContentView(R.layout.options_activity);
+            setContentView(R.layout.activity_options);
         });
     }
 
