@@ -4,12 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1118659420289855" />
-        <entry key="app/src/main/res/layout/animal_info_activity.xml" value="0.14907836914062503" />
+        <entry key="app/src/main/res/layout/animal_info_activity.xml" value="0.24725189208984374" />
         <entry key="app/src/main/res/layout/animal_sheet.xml" value="0.18529968261718752" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

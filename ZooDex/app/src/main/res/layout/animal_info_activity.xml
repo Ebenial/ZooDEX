@@ -12,14 +12,40 @@
         android:id="@+id/reTakePhotoButton"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="285dp"
         android:layout_marginEnd="15dp"
         android:clickable="true"
         android:contentDescription="re take photo"
         android:foreground="@android:drawable/ic_menu_camera"
+        android:onClick="reTakePhoto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="NotSibling" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/soundButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="285dp"
+        android:clickable="true"
+        android:contentDescription="re take photo"
+        android:foreground="@android:drawable/ic_lock_silent_mode_off"
+        android:foregroundTint="#616060"
+        android:onClick="sound"
+        android:tint="#000000"
+        app:layout_constraintStart_toStartOf="@+id/photoView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling" />
+
+    <VideoView
+        android:id="@+id/photoView"
+        android:layout_width="414dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -28,7 +54,7 @@
         android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/navBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="#009688"
@@ -39,7 +65,7 @@
             app:titleTextColor="#FFFFFF" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/animalPicture"
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:contentDescription="animal" />
@@ -62,6 +88,7 @@
             android:gravity="center_horizontal"
             android:text="TextView"
             android:textSize="20sp" />
+
     </LinearLayout>
 
 
