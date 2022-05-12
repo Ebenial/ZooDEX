@@ -1,7 +1,6 @@
 package com.example.zoodex;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.provider.MediaStore;

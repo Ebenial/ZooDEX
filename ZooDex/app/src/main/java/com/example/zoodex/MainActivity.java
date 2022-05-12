@@ -3,7 +3,7 @@ package com.example.zoodex;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class OptionsActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -11,3 +11,4 @@ public class OptionsActivity extends AppCompatActivity {
         setContentView(R.layout.animal_info_activity);
     }
 }
+
