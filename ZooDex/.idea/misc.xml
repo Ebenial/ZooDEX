@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17_PREVIEW" project-jdk-name="11 (WSL)" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/yoann/L3/inf1610-IHM/ZOODEX/Code/zoodex-rose/ZooDex/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/yoann/L3/inf1610-IHM/ZOODEX/Code/zoodex-rose/ZooDex/app/src/main/res/layout/activity_dex.xml" value="0.2" />
+        <entry key="..\:/Users/yoann/L3/inf1610-IHM/ZOODEX/Code/zoodex-rose/ZooDex/app/src/main/res/layout/activity_my_zoodex.xml" value="0.264" />
+        <entry key="..\:/Users/yoann/L3/inf1610-IHM/ZOODEX/Code/zoodex-rose/ZooDex/app/src/main/res/layout/dex_animal_element.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
