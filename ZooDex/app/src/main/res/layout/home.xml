@@ -4,11 +4,14 @@
         xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
+        android:background="@drawable/home"
         android:layout_height="match_parent"><![CDATA[
         tools:context="com.example.zoodex.Home">
 
 
     ]]>
+
+
     <TextView
             android:id="@+id/welcome"
             android:text="Bienvenue utilisateur"
@@ -37,6 +40,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_width="243dp"
             android:layout_height="63dp"
+            android:backgroundTint="@android:color/holo_green_light"
             app:layout_constraintTop_toBottomOf="@+id/logo" android:layout_marginTop="16dp"/>
     <Button
             android:id="@+id/zoodex"
@@ -46,7 +50,7 @@
             android:layout_width="243dp"
             android:layout_height="63dp"
             android:gravity="center"
-
+            android:backgroundTint="@android:color/holo_green_light"
             app:layout_constraintTop_toBottomOf="@+id/photo" tools:ignore="MissingConstraint"
             android:layout_marginTop="28dp"/>
     <Button
@@ -56,6 +60,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_width="243dp"
             android:layout_height="63dp"
+            android:backgroundTint="@android:color/holo_green_light"
             app:layout_constraintTop_toBottomOf="@+id/zoodex" tools:ignore="MissingConstraints"
             android:layout_marginTop="36dp"/>
 
