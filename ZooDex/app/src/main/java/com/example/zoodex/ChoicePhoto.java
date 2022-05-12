@@ -2,11 +2,10 @@ package com.example.zoodex;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 
 public class ChoicePhoto extends AppCompatActivity {
 
@@ -15,14 +14,12 @@ public class ChoicePhoto extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.choicephoto_activity);
 
-        Button button = (Button) findViewById(R.id.photo);
+        ImageView image = findViewById(R.id.photo);
 
-        button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, 0);
-            }
-        });
+        //On récupère la photo prise et on l'affiche dans la zone prévue
+        Bundle extras = getIntent().getExtras();
+        byte[] byteArray = extras.getByteArray("photo");
+        Bitmap bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+        image.setImageBitmap(bmp);
     }
 }
