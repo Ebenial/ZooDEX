@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Toolbar;
-import android.widget.VideoView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -52,14 +51,9 @@ public class AnimalInfoController extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 1 && resultCode == RESULT_OK && data != null){
-            Bundle bundle = data.getExtras();
-            Bitmap finalPhoto = (Bitmap) bundle.get("data");
-            this.animalPicture.setImageBitmap(finalPhoto);
             setContentView(R.layout.animal_info_activity);
         }
     }
-
-
 
     public void sound(View v){
         mediaPlayer.start();
