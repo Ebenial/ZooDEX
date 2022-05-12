@@ -24,6 +24,8 @@ public class HomeActivity extends AppCompatActivity {
 
 
         Button photo = (Button) findViewById(R.id.photo);
+        Button bestiaire = (Button) findViewById(R.id.zoodex);
+        Button options = (Button) findViewById(R.id.options);
 
         //Action du bouton photo, qui permet de donner accès à la caméra pour prendre une photo
         photo.setOnClickListener(v -> {
@@ -33,6 +35,16 @@ public class HomeActivity extends AppCompatActivity {
             }else{
                 Toast.makeText(HomeActivity.this, "Impossible de prendre une photo, aucune application ne le permet", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        //Action du bouton bestiaire, qui donne l'accès au zoodex
+        bestiaire.setOnClickListener(view -> {
+            //setContentView(R.layout.dexlist_activity);
+        });
+
+        //Action du bouton options, qui donne accès aux paramètres de l'application
+        options.setOnClickListener(v -> {
+            //setContentView(R.layout.options_activity);
         });
     }
 
