@@ -21,8 +21,6 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
 
-
-
         Button photo = (Button) findViewById(R.id.photo);
         Button bestiaire = (Button) findViewById(R.id.zoodex);
         Button options = (Button) findViewById(R.id.options);
@@ -44,7 +42,8 @@ public class HomeActivity extends AppCompatActivity {
 
         //Action du bouton options, qui donne accès aux paramètres de l'application
         options.setOnClickListener(v -> {
-            setContentView(R.layout.activity_options);
+            Intent intent = new Intent(this, OptionsActivity.class);
+            startActivity(intent);
         });
     }
 
