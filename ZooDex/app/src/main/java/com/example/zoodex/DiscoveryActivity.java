@@ -17,6 +17,8 @@ public class DiscoveryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.discovery_activity);
+
+
     }
 
 
