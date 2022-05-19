@@ -7,13 +7,12 @@
         android:layout_height="match_parent"
         tools:context="com.example.zoodex.DiscoveryActivity">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/locate"
+    <Button
+            android:id="@+id/locateToto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="400dp"
             android:layout_marginEnd="15dp"
-            android:clickable="true"
             app:backgroundTint="@color/black"
             android:foreground="@android:drawable/ic_menu_mylocation"
             app:layout_constraintEnd_toEndOf="parent"
