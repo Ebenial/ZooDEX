@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/yoann/L3/inf1610-IHM/ZOODEX/zoodex-rose/ZooDex/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1625" />
         <entry key="..\:/Users/yoann/L3/inf1610-IHM/ZOODEX/zoodex-rose/ZooDex/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1625" />
         <entry key="..\:/Users/yoann/L3/inf1610-IHM/ZOODEX/zoodex-rose/ZooDex/app/src/main/res/layout/activity_my_zoodex.xml" value="0.12158054711246201" />
@@ -12,6 +13,23 @@
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11 (WSL)" project-jdk-type="JavaSDK">
+=======
+        <entry key="..\:/Users/antoi/AndroidStudioProjects/zoodex-rose/ZooDex/app/src/main/res/layout/activity_options.xml" value="0.22916666666666666" />
+        <entry key="..\:/Users/antoi/AndroidStudioProjects/zoodex-rose/ZooDex/app/src/main/res/layout/choicephoto_activity.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/antoi/AndroidStudioProjects/zoodex-rose/ZooDex/app/src/main/res/layout/discovery_activity.xml" value="0.22916666666666666" />
+        <entry key="..\:/Users/antoi/AndroidStudioProjects/zoodex-rose/ZooDex/app/src/main/res/layout/home.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/antoi/AndroidStudioProjects/zoodex-rose/ZooDex/app/src/main/res/layout/home_activity.xml" value="0.22916666666666666" />
+        <entry key="..\:/Users/antoi/AndroidStudioProjects/zoodex-rose/ZooDex/app/src/main/res/layout/homeactivity.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/samue/Desktop/zoo/zoodex-rose/ZooDex/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/samue/Desktop/zoo/zoodex-rose/ZooDex/app/src/main/res/layout/activity_options.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/samue/Desktop/zoo/zoodex-rose/ZooDex/app/src/main/res/layout/choicephoto_activity.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/samue/Desktop/zoo/zoodex-rose/ZooDex/app/src/main/res/layout/discovery_activity.xml" value="0.22" />
+        <entry key="..\:/Users/samue/Desktop/zoo/zoodex-rose/ZooDex/app/src/main/res/layout/home_activity.xml" value="0.115625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="17" project-jdk-type="JavaSDK">
+>>>>>>> 2e0b820cf502c72726b344cf4df1b9d1a520e0bd
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

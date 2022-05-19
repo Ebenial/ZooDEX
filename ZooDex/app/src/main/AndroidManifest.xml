@@ -33,6 +33,10 @@
         <activity android:name=".OptionsActivity"
             android:parentActivityName=".HomeActivity">
         </activity>
+        <activity android:name=".DiscoveryActivity"
+                  android:parentActivityName=".HomeActivity">
+        </activity>
+
     </application>
 
 </manifest>
