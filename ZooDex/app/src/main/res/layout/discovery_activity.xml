@@ -19,8 +19,6 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="NotSibling" />
 
-
-
     <ImageView
             android:id="@+id/notFound"
             android:src="@drawable/not_found_animal"

@@ -22,11 +22,6 @@ public class OptionsActivity<view> extends AppCompatActivity {
         
     }
 
-
-
-
-
-
     public void onCheckboxClicked(View v) {
         boolean checked = ((CheckBox) v).isChecked();
 
