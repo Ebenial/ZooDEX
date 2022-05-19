@@ -1,0 +1,7 @@
+{
+    "id": 18,
+    "name": "Tigre",
+    "description": "Le Tigre (Panthera tigris) est une espèce de mammifère carnivore de la famille des félidés (Felidae) du genre Panthera. Aisément reconnaissable à sa fourrure rousse rayée de noir, il est le plus grand félin sauvage et l'un des plus grands carnivores terrestres. L'espèce est divisée en neuf sous-espèces présentant des différences mineures de taille ou de comportement. Superprédateur, il chasse principalement les cerfs et les sangliers, bien qu'il puisse s'attaquer à des proies de taille plus importante comme les buffles.",
+    "imagePath": "R.animals.images.unknown",
+    "soundPath": "R.animals.sounds.tigre"
+}
