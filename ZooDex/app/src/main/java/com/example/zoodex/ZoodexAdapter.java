@@ -4,41 +4,72 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.zoodex.model.Animal;
 
-public class ZoodexAdapter extends ArrayAdapter<Animal> {
+public class ZoodexAdapter extends RecyclerView.Adapter<ZoodexAdapter.ViewHolder> {
     private Context context;
     private int resource;
 
+    private Animal[] animals;
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        private TextView txtName;
+        private ImageView imgAnimal;
+
+        public ViewHolder(View v) {
+            super(v);
+
+            this.txtName = v.findViewById(R.id.txtAnimalName);
+            this.imgAnimal = v.findViewById(R.id.imgAnimal);
+        }
+
+        public TextView getNameView() {
+            return this.txtName;
+        }
+
+        public ImageView getImageView() {
+            return this.imgAnimal;
+        }
+    }
+
     public ZoodexAdapter(Context context, int resource, Animal[] animals) {
-        super(context, resource, animals);
+        super();
         this.context = context;
         this.resource = resource;
+
+        this.animals = animals;
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        Animal animal = getItem(position);
-        String name = animal.getName();
-        boolean found = animal.isFound();
+    public ZoodexAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(this.resource, parent, false);
 
-        LayoutInflater inflater = LayoutInflater.from(this.context);
-        convertView = inflater.inflate(this.resource, parent, false);
+        return new ZoodexAdapter.ViewHolder(view);
+    }
 
-        TextView txtName = convertView.findViewById(R.id.txtAnimalName);
-        ImageView imgAnimal = convertView.findViewById(R.id.imgAnimal);
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        Animal a = this.animals[position];
 
-        txtName.setText(name);
-        if (found) {
+        holder.getNameView().setText(a.getName());
+
+        ImageView imgAnimal = holder.getImageView();
+        if (a.isFound()) {
             imgAnimal.setImageResource(R.drawable.ic_launcher_foreground);
         } else {
             imgAnimal.setImageResource(R.drawable.ic_launcher_background);
         }
+    }
 
-        return convertView;
+    @Override
+    public int getItemCount() {
+        return this.animals.length;
     }
 }

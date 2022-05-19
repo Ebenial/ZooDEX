@@ -2,8 +2,10 @@ package com.example.zoodex;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.GridView;
-import android.widget.ListView;
+
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.zoodex.model.Animal;
 
@@ -24,7 +26,12 @@ public class MyZoodexActivity extends Activity {
         };
 
         this.adapter = new ZoodexAdapter(this, R.layout.dex_animal_element, this.animals);
-        GridView gridAnimals = findViewById(R.id.gridAnimals);
+
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+
+        RecyclerView gridAnimals = findViewById(R.id.gridAnimals);
+        gridAnimals.setLayoutManager(layoutManager);
         gridAnimals.setAdapter(this.adapter);
     }
 }
