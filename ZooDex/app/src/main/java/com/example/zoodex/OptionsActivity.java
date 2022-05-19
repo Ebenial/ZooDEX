@@ -1,4 +1,4 @@
-package com.example.quiperoselocalquimarche;
+package com.example.zoodex;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,7 +18,6 @@ public class OptionsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_options);
         AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
         int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
         int curVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
@@ -44,6 +43,7 @@ public class OptionsActivity extends AppCompatActivity {
 
     public void onCheckboxClicked(View v) {
         boolean checked = ((CheckBox) v).isChecked();
+        Toast toast = null;
 
         switch (v.getId()) {
             case R.id.vibrationBox:
@@ -52,50 +52,45 @@ public class OptionsActivity extends AppCompatActivity {
                     long[] pattern = {10, 10};
                     //VibrationEffect vibrationEffect1 = VibrationEffect.createWaveform(pattern, 0);
                     //vibe.vibrate(vibrationEffect1);
-                    Toast toast = Toast.makeText(getApplicationContext(), "Vibration activé", Toast.LENGTH_LONG);
-                    toast.show();
+                    toast = Toast.makeText(getApplicationContext(), "Vibration activé", Toast.LENGTH_LONG);
                 } else {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Vibration désactivé", Toast.LENGTH_LONG);
-                    toast.show();
+                    toast = Toast.makeText(getApplicationContext(), "Vibration désactivé", Toast.LENGTH_LONG);
                     vibe.cancel();
                 }
                 break;
             case R.id.daltonienBox:
                 if(checked) {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Mode daltonien activé", Toast.LENGTH_LONG);
-                    toast.show();
+                    toast = Toast.makeText(getApplicationContext(), "Mode daltonien activé", Toast.LENGTH_LONG);
+
                 } else {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Mode daltonien activé", Toast.LENGTH_LONG);
-                    toast.show();
+                    toast = Toast.makeText(getApplicationContext(), "Mode daltonien désactivé", Toast.LENGTH_LONG);
                 }
                 break;
             case R.id.notificationBox:
                 if(checked) {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Notifications activé", Toast.LENGTH_LONG);
-                    toast.show();
+                    toast = Toast.makeText(getApplicationContext(), "Notifications activé", Toast.LENGTH_LONG);
                 } else {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Notifications activé", Toast.LENGTH_LONG);
-                    toast.show();
+                    toast = Toast.makeText(getApplicationContext(), "Notifications désactivé", Toast.LENGTH_LONG);
                 }
                 break;
         }
+        toast.show();
     }
 
     public void onClick(View v) {
+        Toast toast = null;
         switch (v.getId()) {
             case R.id.buttonDelete:
-                Toast toast = Toast.makeText(getApplicationContext(), "Données supprimées", Toast.LENGTH_LONG);
-                toast.show();
+                toast = Toast.makeText(getApplicationContext(), "Données supprimées", Toast.LENGTH_LONG);
                 break;
             case R.id.buttonMDP:
-                Toast toast = Toast.makeText(getApplicationContext(), "Mot de passe changé", Toast.LENGTH_LONG);
-                toast.show();
+                toast = Toast.makeText(getApplicationContext(), "Mot de passe changé", Toast.LENGTH_LONG);
                 break;
             case R.id.creditText:
-                Toast toast = Toast.makeText(getApplicationContext(), "Ont travaillé sur le projet : l'équipe rose ainsi que leur volonté de réussir et d'aller loin dans la vie", Toast.LENGTH_LONG);
-                toast.show();
+                toast = Toast.makeText(getApplicationContext(), "Ont travaillé sur le projet : l'équipe rose ainsi que leur volonté de réussir et d'aller loin dans la vie", Toast.LENGTH_LONG);
                 break;
         }
+        toast.show();
     }
 
 
