@@ -49,7 +49,7 @@ public class OptionsActivity extends AppCompatActivity {
                 Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE) ;
                 if(checked) {
                     long[] pattern = {10, 10};
-                    VibrationEffect vibrationEffect1 = VibrationEffect.createWaveform(pattern, 0);
+                VibrationEffect vibrationEffect1 = VibrationEffect.createOneShot(500, 5);
                     vibe.vibrate(vibrationEffect1);
                     Toast.makeText(getApplicationContext(), "Vibration activé", Toast.LENGTH_LONG).show();
                 } else {
