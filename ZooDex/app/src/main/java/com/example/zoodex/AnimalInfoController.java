@@ -16,6 +16,8 @@ import android.widget.Toolbar;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.io.ByteArrayOutputStream;
 
 public class AnimalInfoController extends AppCompatActivity {
@@ -25,6 +27,7 @@ public class AnimalInfoController extends AppCompatActivity {
     private TextView desc;
     private Toolbar navBar;
     private MediaPlayer mediaPlayer;
+    private FloatingActionButton takePhotoButton;
 
     @SuppressLint("QueryPermissionsNeeded")
     @Override
@@ -35,18 +38,10 @@ public class AnimalInfoController extends AppCompatActivity {
         this.animalPicture = findViewById(R.id.animalPicture);
         this.title = findViewById(R.id.titleAnimal);
         this.desc = findViewById(R.id.descAnimal);
-        this.navBar = findViewById(R.id.navBar);
-        Button takePhotoButton = findViewById(R.id.reTakePhotoButton);
+        //this.navBar = findViewById(R.id.navBar);
+        this.takePhotoButton = findViewById(R.id.reTakePhotoButton);
 
-        //Action du bouton photo, qui permet de donner accès à la caméra pour prendre une photo
-        takePhotoButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            if (intent.resolveActivity(getPackageManager()) != null) {
-                startActivityForResult(intent, 1);
-            } else {
-                Toast.makeText(AnimalInfoController.this, "Impossible de prendre une photo, aucune application ne le permet", Toast.LENGTH_SHORT).show();
-            }
-        });
+
     }
 
     public void setup(/*Animal animal*/){
@@ -65,18 +60,24 @@ public class AnimalInfoController extends AppCompatActivity {
             Bundle bundle = data.getExtras();
             Bitmap finalPhoto = (Bitmap) bundle.get("data");
 
-            //On compresse la photo et on la passe à la classe ChoicePhoto
+            //On compresse la photo et on la set
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
             finalPhoto.compress(Bitmap.CompressFormat.PNG, 100, stream);
-            byte[] byteArray = stream.toByteArray();
-            Intent intent = new Intent(this, this.getClass());
-            intent.putExtra("photo", byteArray);
-            startActivity(intent);
+            animalPicture.setImageBitmap(finalPhoto);
+        }
+    }
+
+    public void takePhoto(View v){
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if(intent.resolveActivity(getPackageManager()) != null){
+            startActivityForResult(intent, 1);
+        }else{
+            Toast.makeText(AnimalInfoController.this, "Impossible de prendre une photo, aucune application ne le permet", Toast.LENGTH_SHORT).show();
         }
     }
 
     public void sound(View v){
-        //mediaPlayer.start();
+        mediaPlayer.start();
     }
 
 }
