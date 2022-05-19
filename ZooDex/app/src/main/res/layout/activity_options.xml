@@ -6,16 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".OptionsActivity">
 
-    <androidx.appcompat.widget.Toolbar
-            android:id="@+id/navBar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/app_bar"
-            app:navigationIcon="?attr/actionModeCloseDrawable"
-            app:subtitleTextColor="#FFFFFF"
-            app:title="Fiche animale"
-            app:titleMarginStart="20dp"
-            app:titleTextColor="#FFFFFF" tools:ignore="MissingConstraints"/>
+    
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
