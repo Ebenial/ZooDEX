@@ -1,10 +1,12 @@
 package com.example.zoodex;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,6 +15,8 @@ import android.widget.Toolbar;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.ByteArrayOutputStream;
+
 public class AnimalInfoController extends AppCompatActivity {
 
     private ImageView animalPicture;
@@ -20,6 +24,7 @@ public class AnimalInfoController extends AppCompatActivity {
     private TextView desc;
     private Toolbar navBar;
     private MediaPlayer mediaPlayer;
+    private Button takePhotoButton;
 
     AnimalInfoController(Bundle savedInstanceState/*Animal animal*/){
         super.onCreate(savedInstanceState);
@@ -50,9 +55,20 @@ public class AnimalInfoController extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 1 && resultCode == RESULT_OK && data != null){
-            setContentView(R.layout.animal_info_activity);
+            //On récupère la photo prise avec l'appareil photo
+            Bundle bundle = data.getExtras();
+            Bitmap finalPhoto = (Bitmap) bundle.get("data");
+
+            //On compresse la photo et on la passe à la classe ChoicePhoto
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            finalPhoto.compress(Bitmap.CompressFormat.PNG, 100, stream);
+            byte[] byteArray = stream.toByteArray();
+            Intent intent = new Intent(this, this.getClass());
+            intent.putExtra("photo", byteArray);
+            startActivity(intent);
         }
     }
+
 
     public void sound(View v){
         mediaPlayer.start();
