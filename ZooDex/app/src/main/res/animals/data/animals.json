@@ -1,0 +1,210 @@
+{
+    "animals" : [
+        {
+        "id": 1,
+        "name": "Capybara",
+        "description": "Le grand Cabiaï ou Capybara (Hydrochoerus hydrochaeris) est une espèce de rongeurs, un hystricognathe dont la taxinomie et la classification sont encore discutées et varient selon les auteurs. C'est le plus gros rongeur actuel. L'adulte mesure plus d'un mètre de long et pèse plus de 50 kg (jusqu'à 91 kg pour 1,2 m de long et 60 cm de haut). Il vit en Amérique du Sud, où il mène la vie d'un mammifère social et semi-aquatique. Il nage très bien et vit en groupe, les adultes s'organisant pour garder les petits.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.capybara"
+        },
+
+        {
+        "id": 2,
+        "name": "Castor",
+        "description": "Le genre Castor est le seul, au sein de la famille des Castoridae, à contenir des espèces non éteintes de ces rongeurs semi-aquatiques : le Castor européen (Castor fiber), présent en Eurasie, et le Castor du Canada (Castor canadensis), naturellement présent en Amérique du Nord et récemment introduit en Amérique du Sud. Ce sont les seules espèces à produire et entretenir des zones humides ; ils contribuent ainsi à la diversification des habitats.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.castor"
+        },
+
+        {
+        "id": 3,
+        "name": "Zèbre de Grévy",
+        "description": "Le Zèbre de Grévy (Equus grevyi), également connu sous le nom de Zèbre impérial, est le plus grand des équidés sauvages mais aussi la plus menacée des trois espèces de zèbres, les deux autres étant le zèbre des plaines et le zèbre de montagne. Son nom est un hommage au président de la République Française Jules Grévy. Il est l’unique membre toujours existant du sous-genre Dolichohippus.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.zebredegrevy"
+        },
+
+        {
+        "id": 4,
+        "name": "Bison",
+        "description": "Le bison d'Amérique (Bison bison) est l'une des deux espèces de bison encore vivantes, l'autre étant le bison d'Europe. Le bison des plaines (Bison bison bison), une de ses deux sous-espèces, est caractéristique des grandes prairies du Midwest en Amérique du Nord ; il était un animal essentiel pour de nombreuses cultures amérindiennes.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.bison"
+        },
+
+        {
+        "id": 5,
+        "name": "Girafe",
+        "description": "La Girafe (Giraffa camelopardalis) est une espèce de mammifères ongulés artiodactyles, du groupe des ruminants, vivant dans les savanes africaines et répandue du Tchad jusqu'en Afrique du Sud. Son nom commun vient de l'arabe زرافة, zarāfah. Après des millions d'années d'évolution, la girafe a acquis une anatomie unique avec un cou particulièrement allongé qui lui permet notamment de brouter haut dans les arbres.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.girafe"
+        },
+
+        {
+        "id": 6,
+        "name": "Antilope",
+        "description": "Les Antilopes sont un groupement de mammifères artiodactyles de la famille des Bovidés. Ces ruminants aux pattes menues et aux cornes longues arquées vivent dans les steppes d'Afrique, d'Asie ou même d'Amérique du Nord pour l'antilope d'Amérique (Antilocapra americana) ou pronghorn, dans les forêts ou les déserts suivant les espèces.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.antilope"
+        },
+
+        {
+        "id": 7,
+        "name": "Paon",
+        "description": "Paon [pɑ̃] est un nom vernaculaire ambigu désignant certains oiseaux appartenant à différentes espèces et sous-espèces de la famille des Phasianidés, classés dans les genres Pavo et Afropavo. Les paons sont donc proches des faisans et des pintades. Hormis le Paon bleu (Pavo cristatus), domestiqué de longue date, les autres espèces sont menacées de disparition au XXIe siècle. Leur plumage remarquable est la raison de leur popularité dans la culture et les arts.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.paon"
+        },
+
+        {
+        "id": 8,
+        "name": "Ara",
+        "description": "Ara est un nom vernaculaire donné à des oiseaux parmi les plus grands de la sous-famille des Psittacinae. Ces perroquets portent un plumage vivement coloré, généralement à dominante rouge ou verte, une longue queue et un bec puissant. Ils vivent en Amérique tropicale. Recherchés pour leurs couleurs chatoyantes et pour leur aptitude à « parler » comme beaucoup d'autres Psittacinae, les aras sont menacés d'extinction à l'état sauvage. Une espèce, l'Ara de Spix, a même disparu à l'état sauvage, et les seuls spécimens encore vivants à l'heure actuelle se trouvent en captivité. Dans la nature, les aras se nourrissent en bandes.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.ara"
+        },
+
+        {
+        "id": 9,
+        "name": "Scarabée japonais",
+        "description": "Le scarabée japonais (Popillia japonica, Newman) est une espèce d'insectes de la famille des Scarabaeidae et de l’ordre des coléoptères. Originaire de l’est de l’Asie (principalement des grandes îles du Japon), le scarabée japonais a été accidentellement introduit aux États-Unis en 1916. La présence du scarabée japonais a été signalée pour la première fois au Canada en 1939 à Yarmouth en Nouvelle-Écosse. Depuis, l’espèce continue d’étendre sa distribution aux États-Unis et au Canada. L'espèce semble bien présente en Italie du nord. En 2017, ce scarabée a été observé pour la première fois à la frontière entre l'Italie et la Suisse.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.scarabeejaponais"
+        },
+
+        {
+        "id": 10,
+        "name": "Boa",
+        "description": "Le mot boa est un terme du vocabulaire courant qui désigne plusieurs espèces de serpents carnivores constricteurs. Ce nom ne correspond pas à un niveau précis de la classification scientifique des espèces. Autrement dit, il s'agit d'un nom vernaculaire dont le sens est ambigu en biologie car il désigne une partie seulement des différentes espèces de la famille des Boidae, notamment celles du genre Boa, mais aussi quelques serpents de la famille des Bolyeriidae : les « boas de l'île Ronde ». ",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.boa"
+        },
+
+        {
+        "id": 11,
+        "name": "Cerastes",
+        "description": "Ce sont des serpents dont la taille varie de 25 à 80 cm selon les espèces, d'aspect plutôt trapu. La tête est assez plate, large, se démarquant nettement du corps. Certains individus présentent deux cornes en écaille au-dessus des yeux, ces derniers ayant une pupille verticale. Les cornes ne sont présentes que chez les espèces C. cerastes et C. gasperetii, bien qu'au sein d'une même population certains individus en soient dépourvus2. Ils sont de couleur gris, jaune, marron ou brun selon les espèces, avec des motifs irréguliers.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.cerastes"
+        },
+
+        {
+        "id": 12,
+        "name": "Requin",
+        "description": "Les requins, squales ou sélachimorphes forment un super-ordre de poissons cartilagineux, possédant cinq à sept fentes branchiales sur les côtés de la tête et les nageoires pectorales qui ne sont pas fusionnées à la tête. Ils sont présents dans tous les océans du globe et dans certains grands fleuves. Les requins modernes sont classés au sein du clade Selachimorpha ou Selachii et constituent le groupe-frère des raies. Toutefois, le terme « requin », au sens large, désigne aussi les espèces disparues de la sous-classe des Elasmobranchii, comme Cladoselache et Xenacanthus.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.requin"
+        },
+
+        {
+        "id": 13,
+        "name": "Vautour",
+        "description": "Les vautours sont des oiseaux nécrophages obligatoires : ils se nourrissent presque exclusivement de cadavres d'animaux, et souvent des carcasses de gros animaux dont ils sont les principaux consommateurs ; de ce fait, ils sont qualifiés d'« équarrisseurs naturels ». En éliminant les cadavres, ils évitent la propagation de maladies. À ce titre, ils fournissent un service écosystémique particulièrement important. Le terme ne doit pas être confondu avec celui d'autour qui désigne d'autres rapaces.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.vautour"
+        },
+
+        {
+        "id": 14,
+        "name": "Aigle Royal",
+        "description": "L'Aigle royal (Aquila chrysaetos) est une espèce d'oiseaux de la famille des accipitridés. C'est un rapace brun foncé, avec un plumage plus brun-doré sur la tête et le cou. L'Aigle royal utilise son agilité, sa vitesse et ses serres extrêmement puissantes pour attraper ses proies : des lapins, des marmottes, des écureuils, et de grands mammifères comme les renards, les chats sauvages et domestiques, de jeunes chèvres de montagne, de jeunes bouquetins, et de jeunes cervidés. Il consomme aussi des charognes, si les proies sont rares, ainsi que des reptiles. Des oiseaux, dont des espèces de grande taille comme des cygnes ou des grues, des corbeaux et des Goélands marins ont tous été notés comme proies potentielles.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.aigleroyal"
+        },
+
+        {
+        "id": 15,
+        "name": "Panthère des neiges",
+        "description": "La Panthère des neiges (Panthera uncia, précédemment Uncia uncia), aussi appelée Léopard des neiges, Once ou Irbis, est une espèce de félins de la sous-famille des Pantherinae. Historiquement classée dans le genre monotypique Uncia, elle fait à présent partie du genre Panthera. C'est un félin de taille moyenne avec des pattes courtes, des pieds larges et une longue queue qui représente quasiment la moitié de la longueur totale. La face, large et ronde, possède des oreilles courtes et arrondies. La robe est de couleur gris pâle à gris jaune constellée de taches pleines et de rosettes.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.pantheredesneiges"
+        },
+
+        {
+        "id": 16,
+        "name": "Tigre",
+        "description": "Le Tigre (Panthera tigris) est une espèce de mammifère carnivore de la famille des félidés (Felidae) du genre Panthera. Aisément reconnaissable à sa fourrure rousse rayée de noir, il est le plus grand félin sauvage et l'un des plus grands carnivores terrestres. L'espèce est divisée en neuf sous-espèces présentant des différences mineures de taille ou de comportement. Superprédateur, il chasse principalement les cerfs et les sangliers, bien qu'il puisse s'attaquer à des proies de taille plus importante comme les buffles.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.tigre"
+        },
+
+        {
+        "id": 17,
+        "name": "Dauphin bleu et blanc",
+        "description": "La taille et le poids du dauphin bleu et blanc sont similaires à ceux du dauphin commun : environ 1,90 m à 2,60 m pour 80 à 150 kg. La nageoire dorsale est en forme de faucille, le dos assez sombre, les flancs gris, blancs et bleus. Ce dauphin présente environ trois bandes bleues partant de l'œil, une petite entaille sur la nageoire caudale, et une ou deux bandes bleues qui courent du flanc à la nageoire dorsale.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.dauphinbleueetblanc"
+        },
+
+        {
+        "id": 18,
+        "name": "Lion",
+        "description": "Le Lion (Panthera leo) est une espèce de mammifères carnivores de la famille des Félidés. La femelle du lion est la lionne, son petit est le lionceau. Le mâle adulte, aisément reconnaissable à son importante crinière, accuse une masse moyenne qui peut être variable selon les zones géographiques où il se trouve, allant de 145 à 180 kg pour les lions d'Asie à plus de 225 kg pour les lions d'Afrique. Certains spécimens très rares peuvent dépasser exceptionnellement 300 kg. Un mâle adulte se nourrit de 7 kg de viande chaque jour contre 5 kg chez la femelle.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.lion"
+        },
+
+        {
+        "id": 19,
+        "name": "Dragon de Komodo",
+        "description": "Le Dragon de Komodo ou Varan de Komodo (Varanus komodoensis1) est une espèce de varan qui se rencontre dans les îles de Komodo, Rinca, Florès, Gili Motang et Gili Dasami en Indonésie centrale. Membre de la famille des varanidés, c'est la plus grande espèce vivante de lézard, avec une longueur moyenne 2,59 m et une masse d'environ 79 à 91 kg. Sa taille inhabituelle est parfois attribuée au gigantisme insulaire car il n'existe pas, dans son habitat naturel, d'autres animaux carnivores pouvant occuper ou partager sa niche écologique, ainsi qu'à ses faibles besoins en énergie.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.dragondekomodo"
+        },
+
+        {
+        "id": 20,
+        "name": "Iguane bleu",
+        "description": "L'Iguane bleu (Cyclura lewisi) est une espèce de lézards en danger critique de disparition de la famille des Iguanidae qui vit sur l'île de Grand Cayman. Auparavant considéré comme une sous-espèce de l'iguane terrestre de Cuba, il a été reclassé comme une espèce distincte en 2004 en raison de différences génétiques découvertes quatre ans plus tôt. L'Iguane bleu peut vivre jusqu'à 69 ans, ce qui fait de lui l'une des espèces de lézards pouvant vivre le plus longtemps.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.iguanebleu"
+        },
+
+        {
+        "id": 21,
+        "name": "Fennec",
+        "description": "Le fennec (Vulpes zerda), nommé aussi renard des sables ou renard des sables du Sahara est un petit renard (donc du genre Vulpes et de la famille des Canidés) qui vit dans le désert du Sahara et la péninsule du Sinaï. Avec ses oreilles caractéristiques, il est la plus petite espèce de sa famille. Sa fourrure, ses oreilles et sa fonction rénale sont adaptées aux conditions physiques du désert : températures extrêmes et pénurie d’eau. Ses oreilles lui servent également de système de ventilation et de refroidissement du sang. Elles l'aident à résister aux températures élevées et au climat extrême du désert.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.fennec"
+        },
+
+        {
+        "id": 22,
+        "name": "Macaques",
+        "description": "Macaca, le Macaque, est un genre de primates de la famille des Cercopithecidae. Ces singes catarhiniens sont largement répandus en Asie, de l'Inde jusqu'au Japon et à la ligne Wallace, ainsi qu'en Afrique du Nord et à Gibraltar. Ce sont en effet les seuls primates, à l'exception de l'Homme, qui soient présents sur deux (voire trois) continents et surtout qui se soient acclimatés largement au-dessus de la zone intertropicale.",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.macaques"
+        },
+
+        {
+        "id": 23,
+        "name": "Hyène tachetée",
+        "description": "La Hyène tachetée (Crocuta crocuta) est la plus grande des hyènes et est originaire d'Afrique subsaharienne. L’espèce est la seule représentante vivante appartenant au genre Crocuta. Elle est classée comme préoccupation mineure par l'UICN, pour autant les hyènes ont connu une spectaculaire régression de leur nombre ainsi que de leur aire de répartition, due notamment au braconnage et à la réduction de leur habitat, tout au long du XXe siècle. En 2014, leur population était estimée entre 27 000 et 47 000 individus. La hyène tachetée se distingue facilement des autres espèces de hyènes par ses oreilles courtes et rondes, son pelage tacheté et la présence d'un pseudo-pénis chez les femelles. ",
+        "iconPath": "R.animals.icons.unknown",
+        "imagePath": "R.animals.images.unknown",
+        "soundPath": "R.animals.sounds.hyenetachetee"
+        }
+    ]
+}
