@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
+import android.content.Intent;
 import android.graphics.Matrix;
 import android.net.Uri;
 import android.provider.MediaStore;
@@ -43,7 +44,8 @@ public class ChoicePhoto extends AppCompatActivity {
 
         //Action du bouton "Chercher dans le zoodex", qui amène sur la liste des animaux non découverts pour sélectionner l'animal correspondant
         bestiaire.setOnClickListener(view -> {
-            //setContentView(R.layout.dexlist_activity);
+            Intent dexIntent = new Intent(this, MyZoodexActivity.class);
+            startActivity(dexIntent);
         });
 
         Date currentTime = Calendar.getInstance().getTime();

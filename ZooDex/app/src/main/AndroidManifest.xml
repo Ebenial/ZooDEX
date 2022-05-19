@@ -24,15 +24,21 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity
-            >
+        </activity>
+
+        <!-- Liens vers les activités  -->
         <activity android:name=".ChoicePhoto"
             android:parentActivityName=".HomeActivity">
+        </activity>
+
+        <activity android:name=".MyZoodexActivity"
+                  android:parentActivityName=".HomeActivity">
         </activity>
 
         <activity android:name=".OptionsActivity"
             android:parentActivityName=".HomeActivity">
         </activity>
+
         <activity android:name=".DiscoveryActivity"
                   android:parentActivityName=".HomeActivity">
         </activity>
