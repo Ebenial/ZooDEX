@@ -19,8 +19,7 @@ public class OptionsActivity<view> extends AppCompatActivity {
         setContentView(R.layout.activity_options);
 
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        
     }
 
 
