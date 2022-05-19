@@ -39,9 +39,7 @@ public class HomeActivity extends AppCompatActivity {
 
         //Action du bouton bestiaire, qui donne l'accès au zoodex
         bestiaire.setOnClickListener(view -> {
-            Intent intent = new Intent(this, DiscoveryActivity.class);
-            startActivity(intent);
-            //setContentView(R.layout.discovery_activity);
+            //setContentView(R.layout.dexlist_activity);
         });
 
         //Action du bouton options, qui donne accès aux paramètres de l'application
