@@ -26,19 +26,9 @@
             android:foreground="@android:drawable/ic_menu_mylocation"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
-            tools:ignore="NotSibling"/>
-=======
             tools:ignore="NotSibling" />
 
-    <ImageView
-            android:id="@+id/notFound"
-            android:src="@drawable/not_found_animal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="animal" tools:ignore="MissingConstraints" tools:layout_editor_absoluteY="56dp"
-            tools:layout_editor_absoluteX="0dp"/>
->>>>>>> b2274c9ffe96c03963d93ce4da8cfc69952ed0be
+
     <TextView
             android:id="@+id/titleAnimal"
             android:layout_width="match_parent"

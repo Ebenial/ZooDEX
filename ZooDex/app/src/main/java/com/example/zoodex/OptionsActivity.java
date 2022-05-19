@@ -19,10 +19,7 @@ public class OptionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_options);
     }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> b2274c9ffe96c03963d93ce4da8cfc69952ed0be
     public void onCheckboxClicked(View v) {
         boolean checked = ((CheckBox) v).isChecked();
 
