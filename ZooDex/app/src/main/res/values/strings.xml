@@ -5,4 +5,7 @@
     <string name="dalton">Mode daltonien</string>
     <string name="vibrations">Vibrations</string>
     <string name="volume">Volume</string>
+    <string name="title_activity_my_zoo_dex">MyZooDex</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
