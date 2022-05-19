@@ -5,20 +5,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/found"
         tools:context=".DiscoveryActivity">
-
-    <Button
-            android:id="@+id/locateToto"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="400dp"
-            android:layout_marginEnd="15dp"
-            app:backgroundTint="@color/black"
-            android:foreground="@android:drawable/ic_menu_mylocation"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="NotSibling" />
-
 
 
     <ImageView
@@ -26,23 +14,36 @@
             android:src="@drawable/not_found_animal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="animal" tools:ignore="MissingConstraints" tools:layout_editor_absoluteY="56dp"
-            tools:layout_editor_absoluteX="0dp"/>
+            tools:layout_editor_absoluteX="-4dp" app:layout_constraintBottom_toBottomOf="@+id/infoAnimal"
+            android:layout_marginBottom="40dp"/>
+    <Button
+            android:id="@+id/locateToto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="4dp"
+            app:backgroundTint="@color/found"
+            android:foreground="@android:drawable/ic_menu_mylocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling"/>
     <TextView
             android:id="@+id/titleAnimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Lion"
+            android:textColor="@color/white"
             android:textSize="34sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="25dp" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="488dp"/>
+            tools:layout_editor_absoluteX="0dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="420dp"/>
     <TextView
             android:id="@+id/descAnimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:textColor="@color/white"
             android:text="Vous n'avez pas encore découvert cet animal."
             app:layout_constraintTop_toBottomOf="@+id/titleAnimal" tools:ignore="MissingConstraints,UnknownIdInLayout"
             android:layout_marginTop="10dp" tools:layout_editor_absoluteX="-14dp"/>
@@ -52,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:textColor="@color/white"
             android:text="Pour obtenir des informations sur cet animal, prenez-le en photo."
             app:layout_constraintTop_toBottomOf="@+id/descAnimal" tools:ignore="MissingConstraints,UnknownIdInLayout"
             android:layout_marginTop="2dp" tools:layout_editor_absoluteX="-14dp"/>
@@ -61,6 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:textColor="@color/white"
             android:text="Vous pouvez découvrir où se cache cet animal en cliquant sur le bouton localiser."
             app:layout_constraintTop_toBottomOf="@+id/infoAnimal" tools:ignore="MissingConstraints,UnknownIdInLayout"
             android:layout_marginTop="10dp" tools:layout_editor_absoluteX="-14dp"/>

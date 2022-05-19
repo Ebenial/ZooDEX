@@ -11,4 +11,5 @@
     <color name="rouge">#FF0B10</color>
     <color name="button_color">#4caf50</color>
     <color name="app_bar">#FFBA5C</color>
+    <color name="found"> #3D3D3D</color>
 </resources>

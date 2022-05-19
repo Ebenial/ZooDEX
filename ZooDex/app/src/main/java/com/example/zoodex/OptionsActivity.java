@@ -1,7 +1,5 @@
 package com.example.zoodex;
 
-import android.annotation.SuppressLint;
-import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -9,22 +7,17 @@ import android.os.Bundle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.Toast;
 
-public class OptionsActivity<view> extends AppCompatActivity {
+public class OptionsActivity extends AppCompatActivity {
 
-    @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
-
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-        
     }
-
-
-
-
 
 
     public void onCheckboxClicked(View v) {
