@@ -18,6 +18,7 @@ public class OptionsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_options);
         AudioManager audioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
         int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
         int curVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
@@ -45,52 +46,6 @@ public class OptionsActivity extends AppCompatActivity {
         boolean checked = ((CheckBox) v).isChecked();
         Toast toast = null;
 
-        switch (v.getId()) {
-            case R.id.vibrationBox:
-                Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE) ;
-                if(checked) {
-                    long[] pattern = {10, 10};
-                    //VibrationEffect vibrationEffect1 = VibrationEffect.createWaveform(pattern, 0);
-                    //vibe.vibrate(vibrationEffect1);
-                    toast = Toast.makeText(getApplicationContext(), "Vibration activé", Toast.LENGTH_LONG);
-                } else {
-                    toast = Toast.makeText(getApplicationContext(), "Vibration désactivé", Toast.LENGTH_LONG);
-                    vibe.cancel();
-                }
-                break;
-            case R.id.daltonienBox:
-                if(checked) {
-                    toast = Toast.makeText(getApplicationContext(), "Mode daltonien activé", Toast.LENGTH_LONG);
-
-                } else {
-                    toast = Toast.makeText(getApplicationContext(), "Mode daltonien désactivé", Toast.LENGTH_LONG);
-                }
-                break;
-            case R.id.notificationBox:
-                if(checked) {
-                    toast = Toast.makeText(getApplicationContext(), "Notifications activé", Toast.LENGTH_LONG);
-                } else {
-                    toast = Toast.makeText(getApplicationContext(), "Notifications désactivé", Toast.LENGTH_LONG);
-                }
-                break;
-        }
-        toast.show();
-    }
-
-    public void onClick(View v) {
-        Toast toast = null;
-        switch (v.getId()) {
-            case R.id.buttonDelete:
-                toast = Toast.makeText(getApplicationContext(), "Données supprimées", Toast.LENGTH_LONG);
-                break;
-            case R.id.buttonMDP:
-                toast = Toast.makeText(getApplicationContext(), "Mot de passe changé", Toast.LENGTH_LONG);
-                break;
-            case R.id.creditText:
-                toast = Toast.makeText(getApplicationContext(), "Ont travaillé sur le projet : l'équipe rose ainsi que leur volonté de réussir et d'aller loin dans la vie", Toast.LENGTH_LONG);
-                break;
-        }
-        toast.show();
     }
 
 

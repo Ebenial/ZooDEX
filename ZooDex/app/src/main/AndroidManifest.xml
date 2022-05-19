@@ -29,6 +29,10 @@
         <activity android:name=".ChoicePhoto"
                   android:parentActivityName=".HomeActivity">
         </activity>
+
+        <activity android:name=".OptionsActivity"
+                  android:parentActivityName=".HomeActivity">
+        </activity>
     </application>
 
 </manifest>
