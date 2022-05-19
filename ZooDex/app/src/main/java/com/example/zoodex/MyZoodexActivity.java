@@ -9,8 +9,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.zoodex.model.Animal;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MyZoodexActivity extends Activity {
-    private Animal[] animals;
+    private ArrayList<Animal> animals;
     private ZoodexAdapter adapter;
 
     @Override
@@ -18,12 +21,12 @@ public class MyZoodexActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_zoodex_activity);
 
-        this.animals = new Animal[] {
+        this.animals = new ArrayList(Arrays.asList(
                 new Animal(0, "Capybara", "Desc capy", null, null),
                 new Animal(1, "Lion", "Desc lion", null, null, true),
                 new Animal(2, "Dauphin", "Desc dauphin", null, null),
                 new Animal(3, "Girafe", "Desc girafe", null, null, true)
-        };
+        ));
 
         this.adapter = new ZoodexAdapter(this, R.layout.dex_animal_element, this.animals);
 

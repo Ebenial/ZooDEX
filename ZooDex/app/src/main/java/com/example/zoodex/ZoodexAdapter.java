@@ -7,16 +7,17 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.zoodex.model.Animal;
+
+import java.util.ArrayList;
 
 public class ZoodexAdapter extends RecyclerView.Adapter<ZoodexAdapter.ViewHolder> {
     private Context context;
     private int resource;
 
-    private Animal[] animals;
+    private ArrayList<Animal> animals;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private TextView txtName;
@@ -38,7 +39,7 @@ public class ZoodexAdapter extends RecyclerView.Adapter<ZoodexAdapter.ViewHolder
         }
     }
 
-    public ZoodexAdapter(Context context, int resource, Animal[] animals) {
+    public ZoodexAdapter(Context context, int resource, ArrayList<Animal> animals) {
         super();
         this.context = context;
         this.resource = resource;
@@ -56,7 +57,7 @@ public class ZoodexAdapter extends RecyclerView.Adapter<ZoodexAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Animal a = this.animals[position];
+        Animal a = this.animals.get(position);
 
         holder.getNameView().setText(a.getName());
 
@@ -70,6 +71,6 @@ public class ZoodexAdapter extends RecyclerView.Adapter<ZoodexAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        return this.animals.length;
+        return this.animals.size();
     }
 }
