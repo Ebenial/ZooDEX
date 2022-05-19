@@ -7,6 +7,20 @@
         android:layout_height="match_parent"
         tools:context="com.example.zoodex.DiscoveryActivity">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/reTakePhotoButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="285dp"
+            android:layout_marginEnd="15dp"
+            android:clickable="true"
+            android:contentDescription="re take photo"
+            android:foreground="@drawable/locate_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling" />
+
+
 
     <LinearLayout
             android:id="@+id/linearLayout3"
