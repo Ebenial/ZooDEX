@@ -17,7 +17,6 @@
         android:clickable="true"
         android:contentDescription="re take photo"
         android:foreground="@android:drawable/ic_menu_camera"
-        android:onClick="reTakePhoto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="NotSibling" />
@@ -81,6 +80,5 @@
             android:textSize="20sp" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

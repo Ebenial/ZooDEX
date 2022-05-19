@@ -1,5 +1,6 @@
 package com.example.zoodex;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.media.MediaPlayer;
@@ -24,9 +25,10 @@ public class AnimalInfoController extends AppCompatActivity {
     private TextView desc;
     private Toolbar navBar;
     private MediaPlayer mediaPlayer;
-    private Button takePhotoButton;
 
-    AnimalInfoController(Bundle savedInstanceState/*Animal animal*/){
+    @SuppressLint("QueryPermissionsNeeded")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.animal_info_activity);
 
@@ -34,21 +36,25 @@ public class AnimalInfoController extends AppCompatActivity {
         this.title = findViewById(R.id.titleAnimal);
         this.desc = findViewById(R.id.descAnimal);
         this.navBar = findViewById(R.id.navBar);
-        //this.mediaPlayer = MediaPlayer.create(this, animal.getSound());
+        Button takePhotoButton = findViewById(R.id.reTakePhotoButton);
 
-        /*this.animalPicture.setBackgroundResource(animal.getImageSource());
+        //Action du bouton photo, qui permet de donner accès à la caméra pour prendre une photo
+        takePhotoButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            if (intent.resolveActivity(getPackageManager()) != null) {
+                startActivityForResult(intent, 1);
+            } else {
+                Toast.makeText(AnimalInfoController.this, "Impossible de prendre une photo, aucune application ne le permet", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    public void setup(/*Animal animal*/){
+        /*this.mediaPlayer = MediaPlayer.create(this, animal.getSound());
+        this.animalPicture.setBackgroundResource(animal.getImageSource());
         this.title.setText(animal.getName());
         this.desc.setText(animal.getDesc());
         this.navBar.setBackgroundColor(animal.getColor());*/
-    }
-
-    public void reTakePhoto(View v){
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if(intent.resolveActivity(getPackageManager()) != null){
-            startActivityForResult(intent, 1);
-        }else{
-            Toast.makeText(this, "Impossible de prendre une photo, aucune application ne le permet", Toast.LENGTH_SHORT).show();
-        }
     }
 
     @Override
@@ -69,9 +75,8 @@ public class AnimalInfoController extends AppCompatActivity {
         }
     }
 
-
     public void sound(View v){
-        mediaPlayer.start();
+        //mediaPlayer.start();
     }
 
 }
