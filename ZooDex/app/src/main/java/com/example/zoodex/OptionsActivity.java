@@ -41,12 +41,51 @@ public class OptionsActivity extends AppCompatActivity {
         });
     }
 
-
     public void onCheckboxClicked(View v) {
         boolean checked = ((CheckBox) v).isChecked();
-        Toast toast = null;
 
+        switch (v.getId()) {
+            case R.id.vibrationBox:
+                Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE) ;
+                if(checked) {
+                    long[] pattern = {10, 10};
+                    VibrationEffect vibrationEffect1 = VibrationEffect.createWaveform(pattern, 0);
+                    vibe.vibrate(vibrationEffect1);
+                    Toast.makeText(getApplicationContext(), "Vibration activé", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Vibration désactivé", Toast.LENGTH_LONG);
+                    vibe.cancel();
+                }
+                break;
+            case R.id.daltonienBox:
+                if(checked) {
+                    Toast.makeText(getApplicationContext(), "Mode Daltonien activé", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Mode Daltonien désactivé", Toast.LENGTH_LONG).show();
+                }
+                break;
+            case R.id.notificationBox:
+                if(checked) {
+                    Toast.makeText(getApplicationContext(), "Notifications activé", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Notifications désactivé", Toast.LENGTH_LONG).show();
+                }
+                break;
+        }
     }
 
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.buttonDelete:
+                Toast.makeText(getApplicationContext(), "Données supprimées", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.buttonMDP:
+                Toast.makeText(getApplicationContext(), "Mot de passe changé", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.creditText:
+                Toast.makeText(getApplicationContext(), "Ont travaillé sur le projet : l'équipe rose ainsi que leur volonté de réussir et d'aller loin dans la vie", Toast.LENGTH_LONG).show();
+                break;
+        }
+    }
 
 }
