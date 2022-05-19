@@ -15,6 +15,7 @@ public class DiscoveryActivity extends AppCompatActivity {
         setContentView(R.layout.discovery_activity);
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
+
         Button locate = (Button) findViewById(R.id.locateToto);
         locate.setOnClickListener(view -> {
             setContentView(R.layout.activity_options);

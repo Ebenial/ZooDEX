@@ -5,12 +5,12 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.zoodex.DiscoveryActivity">
+        tools:context=".DiscoveryActivity">
 
     <Button
             android:id="@+id/locateToto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginTop="400dp"
             android:layout_marginEnd="15dp"
             app:backgroundTint="@color/black"
@@ -23,7 +23,7 @@
                 android:id="@+id/navBar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="#009688"
+                android:background="@color/app_bar"
                 app:navigationIcon="?attr/actionModeCloseDrawable"
                 app:subtitleTextColor="#FFFFFF"
                 app:title="Fiche animale"
