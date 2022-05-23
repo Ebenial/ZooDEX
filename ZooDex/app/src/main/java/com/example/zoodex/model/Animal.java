@@ -1,5 +1,7 @@
 package com.example.zoodex.model;
 
+import android.net.Uri;
+
 import java.net.URI;
 
 public class Animal {
@@ -8,12 +10,12 @@ public class Animal {
 
     private String name;
     private String description;
-    private URI picturePath;
-    private URI soundPath;
+    private Uri picturePath;
+    private Uri soundPath;
 
     private boolean found;
 
-    public Animal(int id, String name, String description, URI picturePath, URI soundPath, boolean found) {
+    public Animal(int id, String name, String description, Uri picturePath, Uri soundPath, boolean found) {
         this.id = id;
 
         this.name = name;
@@ -24,15 +26,15 @@ public class Animal {
         this.found = found;
     }
 
-    public Animal(int id, String name, String description, URI picturePath, URI soundPath) {
+    public Animal(int id, String name, String description, Uri picturePath, Uri soundPath) {
         this(id, name, description, picturePath, soundPath, false);
     }
 
-    public Animal(String name, String description, URI picturePath, URI soundPath) {
+    public Animal(String name, String description, Uri picturePath, Uri soundPath) {
         this(0, name, description, picturePath, soundPath);
     }
 
-    public static Animal createAnimal(String name, String description, URI picturePath, URI soundPath) {
+    public static Animal createAnimal(String name, String description, Uri picturePath, Uri soundPath) {
         globalId++;
         Animal a = new Animal(globalId, name, description, picturePath, soundPath);
 

@@ -1,6 +1,7 @@
 package com.example.zoodex;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.RadioButton;
@@ -25,9 +26,11 @@ public class MyZoodexActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_zoodex_activity);
 
+        Uri path = Uri.parse("android.resource://com.example.zoodex/" + R.drawable.lion_found);
+
         this.allAnimals = new ArrayList<Animal>(Arrays.asList(
                 new Animal(0, "Capybara", "Desc capy", null, null),
-                new Animal(1, "Lion", "Desc lion", null, null, true),
+                new Animal(1, "Lion", "Desc lion", path, null, true),
                 new Animal(2, "Dauphin", "Desc dauphin", null, null),
                 new Animal(3, "Girafe", "Desc girafe", null, null)
         ));
@@ -51,6 +54,14 @@ public class MyZoodexActivity extends Activity {
 
         RadioButton rdShowNotFound = findViewById(R.id.rdShowNotFound);
         rdShowNotFound.setOnClickListener(e -> this.showNotFound());
+
+        Bundle b = getIntent().getExtras();
+        int value = -1; // or other values
+        if(b != null)
+            value = b.getInt("key");
+        if(value == 1){
+            showNotFound();
+        }
     }
 
     private void showAll() {

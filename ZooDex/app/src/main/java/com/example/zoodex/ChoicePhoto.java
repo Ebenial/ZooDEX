@@ -31,7 +31,7 @@ public class ChoicePhoto extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.choicephoto_activity);
 
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
         ImageView image = findViewById(R.id.photo);
         Button bestiaire = findViewById(R.id.zoodexButton);
@@ -45,6 +45,9 @@ public class ChoicePhoto extends AppCompatActivity {
         //Action du bouton "Chercher dans le zoodex", qui amène sur la liste des animaux non découverts pour sélectionner l'animal correspondant
         bestiaire.setOnClickListener(view -> {
             Intent dexIntent = new Intent(this, MyZoodexActivity.class);
+            Bundle b = new Bundle();
+            b.putInt("key", 1);
+            dexIntent.putExtras(b);
             startActivity(dexIntent);
         });
 
